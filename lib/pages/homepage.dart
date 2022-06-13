@@ -80,7 +80,7 @@ class HomePage extends StatelessWidget {
               height: 10,
             ),
             Row(
-              // 2 image grid
+              // 2 image, separate container for each image
               children: [
                 Column(
                   children: [

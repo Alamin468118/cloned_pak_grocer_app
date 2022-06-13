@@ -197,7 +197,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Image.asset(
-                        "assets/images/related_image/gmail.png",
+                        "assets/related_images/gmail.png",
                         height: 40.0,
                         width: 40.0,
                       ),
@@ -211,7 +211,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Image.asset(
-                        "assets/images/related_image/facebook.jpg",
+                        "assets/related_images/facebook.jpg",
                         height: 59.0,
                         width: 40.0,
                       ),
@@ -225,7 +225,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Image.asset(
-                        "assets/images/related_image/apple_id.png",
+                        "assets/related_images/apple_id.png",
                         height: 59.0,
                         width: 40.0,
                       ),

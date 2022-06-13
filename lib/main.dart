@@ -1,10 +1,6 @@
-import 'package:cloned_pak_grocer_app/pages/card.dart';
-import 'package:cloned_pak_grocer_app/pages/homepage.dart';
-import 'package:cloned_pak_grocer_app/pages/perks.dart';
+import 'package:cloned_pak_grocer_app/auth/sign_up.dart';
 
 import 'package:flutter/material.dart';
-
-import 'mainScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MainScreen(),
+      home: SignUpPage(),
     );
   }
 }
