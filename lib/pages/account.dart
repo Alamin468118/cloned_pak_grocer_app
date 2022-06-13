@@ -29,16 +29,13 @@ class Account extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Align(
-                      alignment: Alignment.center,
-                      child: Container(
-                        child: Text(
-                          'Account',
-                          style: TextStyle(
-                            fontSize: 17,
-                            fontWeight: FontWeight.bold,
-                            color: constants.white,
-                          ),
+                    Container(
+                      child: Text(
+                        'Account',
+                        style: TextStyle(
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold,
+                          color: constants.white,
                         ),
                       ),
                     ),

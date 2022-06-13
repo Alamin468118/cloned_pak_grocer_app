@@ -4,8 +4,6 @@ import 'package:carousel_slider/carousel_slider.dart';
 
 import '../slider_image.dart';
 
-
-
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
 
@@ -82,6 +80,7 @@ class HomePage extends StatelessWidget {
               ),
               Row(
                 // 2 image, separate container for each image
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Column(
                     children: [
@@ -138,12 +137,14 @@ class HomePage extends StatelessWidget {
                                     Row(
                                       children: [
                                         Container(
-                                          height:
-                                              MediaQuery.of(context).size.height *
-                                                  0.14,
-                                          width:
-                                              MediaQuery.of(context).size.width *
-                                                  0.4,
+                                          height: MediaQuery.of(context)
+                                                  .size
+                                                  .height *
+                                              0.14,
+                                          width: MediaQuery.of(context)
+                                                  .size
+                                                  .width *
+                                              0.4,
                                           decoration: BoxDecoration(
                                             color: Colors.blue,
                                             borderRadius:
@@ -166,7 +167,8 @@ class HomePage extends StatelessWidget {
                                                       ),
                                                     ),
                                                   ],
-                                                  style: TextStyle(fontSize: 20),
+                                                  style:
+                                                      TextStyle(fontSize: 20),
                                                 ),
                                               ),
                                             ],
@@ -188,24 +190,30 @@ class HomePage extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Container(
-                // URL image
-                height: MediaQuery.of(context).size.height * 0.06,
-                width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
-                  image: DecorationImage(
-                    image: AssetImage("assets/images/URL.png"),
-                    fit: BoxFit.fill,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    // URL image
+                    height: MediaQuery.of(context).size.height * 0.06,
+                    width: MediaQuery.of(context).size.width,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(5),
+                      image: DecorationImage(
+                        image: AssetImage("assets/images/URL.png"),
+                        fit: BoxFit.fill,
+                      ),
+                    ),
                   ),
-                ),
+                ],
               ),
               SizedBox(
                 height: 10,
               ),
               Row(
                 // 2 more image grid
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Column(
                     children: [
@@ -216,7 +224,8 @@ class HomePage extends StatelessWidget {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(10),
                           image: DecorationImage(
-                            image: AssetImage("assets/images/special_offer.jpg"),
+                            image:
+                                AssetImage("assets/images/special_offer.jpg"),
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -248,7 +257,6 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      
     );
   }
 }

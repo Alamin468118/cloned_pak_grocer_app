@@ -15,30 +15,28 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   int currentIndex = 0;
-    late List<Widget> pages;
-    late Widget currentPage;
-    late HomePage homepage;
-    late Promotion promotion;
-    late Perks perks;
-    late Cards cards;
-    late Account account;
+  late List<Widget> pages;
+  late Widget currentPage;
+  late HomePage homepage;
+  late Promotion promotion;
+  late Perks perks;
+  late Cards cards;
+  late Account account;
 
-    @override
-    void initState(){
-      super.initState();
-      homepage = HomePage();
-      promotion = Promotion();
-      perks = Perks();
-      cards = Cards();
-      account = Account();
-      pages = [homepage, promotion, perks, cards, account];
-      currentPage = homepage;
-    }
+  @override
+  void initState() {
+    super.initState();
+    homepage = HomePage();
+    promotion = Promotion();
+    perks = Perks();
+    cards = Cards();
+    account = Account();
+    pages = [homepage, promotion, perks, cards, account];
+    currentPage = homepage;
+  }
 
   @override
   Widget build(BuildContext context) {
-    
-
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         onTap: (int index) {
